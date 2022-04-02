@@ -1,0 +1,22 @@
+.screen {
+    background: var(--screen-color);
+    height: 80px;
+    width: 260px;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.screen-text {
+    font-size: 45px;
+    margin-right: 15px;
+    margin-left: 18px;
+    width: fit-content;
+    color: rgb(53, 53, 53);
+    display: inline-block;
+    overflow: hidden;
+    height: fit-content;
+}
