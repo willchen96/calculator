@@ -46,7 +46,7 @@ const handleInput = (prev, input) => {
 
     if (operators.includes(input)) {
         if (input === "-") {
-            if (operators.includes(prev[prev.length - 2])) {
+            if (end === "-" && operators.includes(prev[prev.length - 2])) {
                 return prev
             } else {
                 return prev + input
