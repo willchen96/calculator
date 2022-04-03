@@ -47,6 +47,9 @@ const handleInput = (prev, input) => {
     if (operators.includes(input)) {
         if (input === "-") {
             if (end === "-") {
+                if (operators.includes(prev[prev.length - 2])) {
+                    return prev
+                }
                 return prev.slice(0, -1) + "+"
             } else {
                 return prev + input
